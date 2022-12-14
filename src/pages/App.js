@@ -24,19 +24,18 @@ function App() {
 
       if(!isExist){
         setRepos(prev => [...prev, data]);
-        setCurrentRepo('')
-        return
+        setCurrentRepo('');
+        return;
       }
 
     }
-    alert('Repositório não encontrado')
-
+    
+    alert('Repositório não encontrado');
+    
   }
 
   const handleRemoveRepo = (id) => {
-    console.log('Removendo registro', id);
-
-    // utilizar filter.
+    setRepos(repos.filter(element => (element.id !== id)));
   }
 
 
