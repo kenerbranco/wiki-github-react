@@ -46,7 +46,7 @@ function App() {
     <Container>
       <Row>
         <img src={gitLogo} width={72} height={72} alt="github logo"/>
-        <H1>Wiki Github</H1>
+        <H1>Github Wiki</H1>
       </Row>
       <Input value={currentRepo} onChange={(e) => setCurrentRepo(e.target.value)} />
       <Button onClick={handleSearchRepo}/>
